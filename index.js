@@ -1,19 +1,54 @@
 let drumButtonsLength = document.querySelectorAll(".drum").length;
-
 for(let i = 0; i < drumButtonsLength; i++) {
+
     // Used here a shortcut method for function() to display less code or refractor the code.
     document.querySelectorAll("button")[i].addEventListener("click", function () {  
+
         // What to do when click detected.
-
-        // let audio = new Audio("sounds/tom-1.mp3");
-        // audio.play();
-
         this.style.color = "black";
         this.style.textShadow = "6px 3px 0px yellow";
         this.style.border = "5px solid blue"; 
         this.style.width = "205px";
         this.style.height = "205px";
         this.style.boxShadow = "12px 12px 12px black";
+
+        let buttonInnerHTML = this.innerHTML;
+        switch (buttonInnerHTML) {
+            case "w" : 
+                let tom1 = new Audio("sounds/tom-1.mp3");
+                tom1.play();
+                break;
+
+            case "a" : 
+                let tom2 = new Audio("sounds/tom-2.mp3");
+                tom2.play();
+                break;
+
+            case "s" : 
+                let tom3 = new Audio("sounds/tom-3.mp3");
+                tom3.play();
+                break;
+
+            case "d" : 
+                let tom4 = new Audio("sounds/tom-4.mp3");
+                tom4.play();
+                break;
+
+            case "j" : 
+                let snare = new Audio("sounds/snare.mp3");
+                snare.play();
+                break;
+
+            case "k" : 
+                let crash = new Audio("sounds/crash.mp3");
+                crash.play();
+                break;
+
+            case "l" : 
+                let kick = new Audio("sounds/kick-bass.mp3");
+                kick.play();
+                break;
+        }              
     });
 }
 
