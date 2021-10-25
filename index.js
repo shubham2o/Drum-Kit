@@ -77,38 +77,4 @@ function buttonAnimation(currentKey) {
     setTimeout(function() {
     activeButton.classList.remove("pressed");
     }, 100);
-
-}
-
-
-body {
-    text-align: center;
-    background-color: #283149;
-}
-
-h1 {
-    font-size: 5rem;
-    color: #DBEDF3;
-    font-family: "Arvo", cursive;
-    text-shadow: 3px 0 #DA0463;
-}
-
-footer {
-    color: #DBEDF3;
-    font-family: sans-serif;
-}
-
-.w {
-    background-image: url("images/tom1.png");
-    }
-
-.a {
-    background-image: url("images/tom2.png");
-    }
-
-.s {
-    background-image: url("images/tom3.png");
-    }
-.d {
-    background-image: url("images/tom4.png");
 }
