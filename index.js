@@ -48,6 +48,9 @@ for(let i = 0; i < drumButtonsLength; i++) {
                 let kick = new Audio("sounds/kick-bass.mp3");
                 kick.play();
                 break;
+
+            default : 
+                alert("buttonInnerHTML");
         }              
     });
 }
