@@ -7,16 +7,8 @@ for(let i = 0; i < drumButtonsLength; i++) {
     document.querySelectorAll("button")[i].addEventListener("click", function () {  
 
         // What to do when click detected.
-        this.style.color = "black";
-        this.style.textShadow = "6px 3px 0px yellow";
-        this.style.border = "5px solid blue"; 
-        this.style.width = "205px";
-        this.style.height = "205px";
-        this.style.boxShadow = "12px 12px 12px black";
-
         let buttonInnerHTML = this.innerHTML;
         makeSound(buttonInnerHTML);
-
         buttonAnimation(buttonInnerHTML);
     });
 }
@@ -72,9 +64,15 @@ function makeSound(key) {
     }              
 }
 
+
+// Keyboard and Button Pressed & setTimeout() ~~~~~~~~~~~~~~~~~~~~~~
 function buttonAnimation(currentKey) {
     let activeButton = document.querySelector("." + currentKey);
     activeButton.classList.add("pressed");
+    
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    }, 200);
 }
 
 
