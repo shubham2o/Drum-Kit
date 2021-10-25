@@ -4,7 +4,7 @@ body {
 }
 
 #title {
-    margin: 10px auto -20px;
+    margin: 20px auto -40px;
 }
 
 h1 {
@@ -24,6 +24,7 @@ footer {
 }
 
 .set .drum {
+    text-shadow: 0px 0px 10px yellow;
     margin: 10px 10px auto;
     width: 200px;
     height: 200px;
