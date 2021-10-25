@@ -18,6 +18,11 @@ h1 {
     margin: 120px auto auto;
 }
 
+.pressed {
+    box-shadow: 0px 3px 4px 0px #DBEDF3;
+    opacity: 0.5;
+}
+
 .set .drum {
     color: yellow;
     text-shadow: 6px 3px 0px blue;

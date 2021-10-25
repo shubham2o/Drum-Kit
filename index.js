@@ -16,6 +16,8 @@ for(let i = 0; i < drumButtonsLength; i++) {
 
         let buttonInnerHTML = this.innerHTML;
         makeSound(buttonInnerHTML);
+
+        buttonAnimation(buttonInnerHTML);
     });
 }
 
@@ -23,6 +25,7 @@ for(let i = 0; i < drumButtonsLength; i++) {
 // Detecting Keyboard Press ~~~~~~~~~~~~~~~~~~~~~~
 document.addEventListener("keypress", function(event) {
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
 
 
@@ -67,6 +70,11 @@ function makeSound(key) {
         default : 
             console.log(buttonInnerHTML);
     }              
+}
+
+function buttonAnimation(currentKey) {
+    let activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
 }
 
 
