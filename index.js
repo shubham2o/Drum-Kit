@@ -1,9 +1,12 @@
+let drumButtonsLength = document.querySelectorAll(".drum").length;
 
-
-
-
-
-
+for(let i = 0; i < drumButtonsLength; i++) {
+    // Used here a shortcut method for function() to display less code or refractor the code.
+    document.querySelectorAll("button")[i].addEventListener("click", function () {  
+        alert("I got clicked!");   
+        // What to do when click detected.
+    });
+}
 
 
 
