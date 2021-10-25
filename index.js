@@ -8,11 +8,11 @@ for(let i = 0; i < drumButtonsLength; i++) {
         // let audio = new Audio("sounds/tom-1.mp3");
         // audio.play();
 
-        this.style.color = "black";
-        this.style.textShadow = "6px 3px 0px yellow";
+        this.style.textShadow = "6px 3px 0px black";
         this.style.border = "5px solid blue"; 
-        this.style.width = "195px";
-        this.style.height = "195px";
+        this.style.width = "205px";
+        this.style.height = "205px";
+        this.style.boxShadow = "12px 12px 12px black";
     });
 }
 
