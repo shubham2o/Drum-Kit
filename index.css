@@ -3,16 +3,36 @@ body {
     background-color: #283149;
 }
 
+#title {
+    margin: 10px auto -20px;
+}
+
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     color: #DBEDF3;
     font-family: "Arvo", cursive;
-    text-shadow: 3px 0 #DA0463;
+    text-shadow: 5px 5px #DA0463;
 }
 
 footer {
     color: #DBEDF3;
     font-family: sans-serif;
+}
+
+.set {
+    margin: 120px auto auto;
+}
+
+.set .drum {
+    margin: 10px 10px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px solid #DA0463;
+    box-shadow: 12px 12px 12px black;
+    font-size: 65px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .w {
