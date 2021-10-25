@@ -3,8 +3,16 @@ let drumButtonsLength = document.querySelectorAll(".drum").length;
 for(let i = 0; i < drumButtonsLength; i++) {
     // Used here a shortcut method for function() to display less code or refractor the code.
     document.querySelectorAll("button")[i].addEventListener("click", function () {  
-        alert("I got clicked!");   
         // What to do when click detected.
+
+        // let audio = new Audio("sounds/tom-1.mp3");
+        // audio.play();
+
+        this.style.color = "black";
+        this.style.textShadow = "6px 3px 0px yellow";
+        this.style.border = "5px solid blue"; 
+        this.style.width = "195px";
+        this.style.height = "195px";
     });
 }
 
